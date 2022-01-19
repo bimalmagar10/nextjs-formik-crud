@@ -52,7 +52,13 @@ function update(id,{title,firstName,lastName,email,address,role,password}){
 }
 
 function saveUser(){
-	fs.writeFileSync('data/db.json',JSON.stringify(users,null,4));
+    let path;
+    if(process.env.NODE_ENV === 'development'){
+         path='data/db.json'
+    } else {
+         path='/data/db.json'
+    }
+	fs.writeFileSync(path,JSON.stringify(users,null,4));
 }
 
 const usersRepo = {

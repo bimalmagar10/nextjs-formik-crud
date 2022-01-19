@@ -43,5 +43,8 @@ const headLabel = [
 	}
 ];
 
+const path = require('path');
+const dataPath = path.join(__dirname,"data/db.json");
 
-export {formFields,headLabel};
+
+export {formFields,headLabel,dataPath};

@@ -2,7 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import {Heading,Text,Stack} from "@chakra-ui/react";
 Home.title = "Home";
+import {dataPath} from "../helpers/fields";
 export default function Home() {
+  console.log(dataPath);
   return (
     <>
       <Stack direction="column" spacing="30px">
