@@ -4,15 +4,10 @@ import userServices from '../helpers/user-services';
 import CustomForm from "./CustomForm";
 import * as Yup from "yup";
 import {useToast} from "@chakra-ui/react";
-function setTitle() {
-	const routing = useRouter();
-	AddEdit.title = routing.pathname.includes("/edit") ? "Users - Edit" :"Users - Add";
-}
-
+AddEdit.title = 'Users - Add or Edit';
 export default function AddEdit(props) {
 	const user = props?.user;
     const isAddMode  = !user;
-	setTitle();
 	const router = useRouter();
     const toast = useToast();
 

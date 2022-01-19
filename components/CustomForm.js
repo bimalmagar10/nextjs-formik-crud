@@ -29,7 +29,7 @@ export default function CustomForm(props) {
 			fields.forEach(field => props.setFieldValue(field,props.user[field],false));
 			setUser(props.user);
 		}
-	},[]);
+	},[props]);
 	return (
 		<Form>
 		    <SimpleGrid columns={2} spacingX="50px" spacingY="10px" mb="30px">

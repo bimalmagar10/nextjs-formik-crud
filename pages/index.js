@@ -13,9 +13,9 @@ export default function Home() {
           This application is featured with create,read,update and delete (CRUD)
           operations implemented using Formik for handling forms,NextJS as React framework 
           and Chakra-UI to polish the designs.The server side codes are quite easy to
-          understand as NextJS is featured with SSR.I didn't use the realtime database (
-          I'm treating <strong>db.json</strong> file as database here)like one of MongoDB or MySQL but the code implementation works exactly
-          like how we can connect our front-end part with the realtime backend.Don't
+          understand as NextJS is featured with SSR.I didn&apos;t use the realtime database (
+          I&apos;m treating <strong>db.json</strong> file as database here)like one of MongoDB or MySQL but the code implementation works exactly
+          like how we can connect our front-end part with the realtime backend.Don&apos;t
           forget to give me a star if you liked the app 😊.
         </Text>
       </Stack>
