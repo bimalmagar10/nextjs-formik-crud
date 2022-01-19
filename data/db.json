@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "title": "Mr",
+        "firstName": "bimal",
+        "lastName": "thapa",
+        "email": "afacacaca@user.com",
+        "role": "Admin",
+        "password": "1234567890",
+        "address": "Pokhara",
+        "id": 1,
+        "dateCreated": "2022-01-19T17:34:47.567Z",
+        "dateUpdated": "2022-01-19T17:34:47.568Z"
+    }
+]
