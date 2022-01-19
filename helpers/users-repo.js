@@ -1,4 +1,5 @@
 import * as fs from 'fs';
+import {rootPath,path} from "./fields";
 let users = require('/data/db.json');
 
 function getAll() {
@@ -52,13 +53,11 @@ function update(id,{title,firstName,lastName,email,address,role,password}){
 }
 
 function saveUser(){
-    let path;
     if(process.env.NODE_ENV === 'development'){
-         path='data/db.json'
+        fs.writeFileSync('data/db.json',JSON.stringify(users,null,4));
     } else {
-         path='/data/db.json'
+        fs.writeFileSync(path.join(rootPath,'data','db.json'),JSON.stringify(users,null,4));
     }
-	fs.writeFileSync(path,JSON.stringify(users,null,4));
 }
 
 const usersRepo = {
