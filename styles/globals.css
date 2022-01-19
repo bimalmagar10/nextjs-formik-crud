@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+.active {
+  font-weight:bold;
+  color:blue !important;
+}
