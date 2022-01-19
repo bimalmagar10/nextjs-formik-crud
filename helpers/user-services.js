@@ -1,5 +1,5 @@
 import fetchWrapper from "./fetch-wrapper";
-const apiUrl = process.env.NODE_ENV === 'development' ?'http://localhost:3000/api' : 'http://localhost:3000/api';
+const apiUrl = process.env.NODE_ENV === 'development' ?'http://localhost:3000/api' : 'https://nextjs-formik-crud.vercel.app/api';
 const baseUrl = `${apiUrl}/users`;
 
 function getAll() {
