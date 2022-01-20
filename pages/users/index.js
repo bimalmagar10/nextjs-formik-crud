@@ -1,4 +1,3 @@
-import Head from "next/head";
 import {useState,useEffect} from 'react';
 import {
 	Table,
@@ -9,7 +8,8 @@ import {
     Tr,
     HStack,
     Button,
-    Heading
+    Heading,
+    Spinner
 	} from "@chakra-ui/react";
 import {EditIcon,DeleteIcon,AddIcon} from "@chakra-ui/icons";
 import {useRouter} from "next/router";
@@ -60,6 +60,16 @@ export default function Users() {
  					</Tr>
  				</Thead>
  				<Tbody>
+ 				            {
+ 				            	users && !users.length && (
+ 				            		<pre>No any users</pre>
+ 				            	)
+ 				            }
+ 				            {
+ 				            	!users && (
+ 				            		<Spinner color="red.500" size="xl"/>
+ 				            	)
+ 				            }
  				    		{
  				    			users.map((user,index) => (
  				    				<Tr key={index}>
